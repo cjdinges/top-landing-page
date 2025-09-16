@@ -244,6 +244,12 @@ p {
         margin: auto;
     }
 
+    .information .cards-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     @media screen and (max-width: 420px) {
         .navbar {
             height: 120px;
