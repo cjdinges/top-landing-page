@@ -214,7 +214,8 @@ p {
     }
 
     .hero h1,
-    .information h1 {
+    .information h1,
+    .cta-box h1 {
         font-size: 26px;
     }
 
@@ -262,6 +263,29 @@ p {
         min-width: 200px;
     }
 
+    .quote {
+        padding: 32px;
+    }
+
+    .quote p,
+    .quote h2 {
+        font-size: 24px;
+    }
+
+    .final-cta .cta-box {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-box button {
+        margin: auto;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+
     @media screen and (max-width: 420px) {
         .navbar {
             height: 120px;
@@ -277,8 +301,9 @@ p {
         }
 
         .hero h1,
-        .information h1 {
-            font-size: 20px;
+        .information h1,
+        .cta-box h1 {
+            font-size: 18px;
         }
 
         body {
@@ -302,5 +327,13 @@ p {
         
         .information .cards-container {
             gap: 10px;
+        }
+
+        .final-cta .cta-box {
+            gap: 0px;
+        }
+
+        .footer {
+            font-size: 12px;
         }
 }
