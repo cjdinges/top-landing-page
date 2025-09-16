@@ -210,11 +210,16 @@ p {
     }
 
     .navbar ul li {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    h1 {
-        font-size: 32px;
+    .hero h1,
+    .information h1 {
+        font-size: 26px;
+    }
+
+    body {
+        font-size: 18px;
     }
 
     .hero h1,
@@ -230,6 +235,7 @@ p {
     }
 
     .header .container{
+        padding: 10px;
         flex-direction: column;
     }
 
@@ -248,6 +254,12 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+    }
+
+    .information img {
+        max-width: 200px;
+        min-width: 200px;
     }
 
     @media screen and (max-width: 420px) {
@@ -264,8 +276,13 @@ p {
             min-width: 300px;
         }
 
-        h1 {
-            font-size: 24px;
+        .hero h1,
+        .information h1 {
+            font-size: 20px;
+        }
+
+        body {
+            font-size: 14px;
         }
 
         .header button {
@@ -273,6 +290,17 @@ p {
             display: flex;
             justify-content: center;
         }
-    }
-    
+
+        .information img {
+            max-width: 150px;
+            min-width: 150px;
+        }
+
+        .header .container{
+            padding: 5px;
+        }
+        
+        .information .cards-container {
+            gap: 10px;
+        }
 }
